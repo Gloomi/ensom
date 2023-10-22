@@ -1,0 +1,1 @@
+REPLACE INTO `item_db2` (`id`,`name_aegis`,`name_english`,`type`,`price_buy`,`weight`,`trade_nodrop`,`trade_notrade`,`trade_tradepartner`,`trade_nosell`,`trade_nocart`,`trade_noguildstorage`,`trade_nomail`,`trade_noauction`,`script`) VALUES (2000000,'Reward_Box','Reward Box','Usable',10000,200,1,1,1,1,1,1,1,1,'getgroupitem(IG_RewardBox);');
