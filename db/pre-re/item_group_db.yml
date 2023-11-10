@@ -11093,37 +11093,37 @@ Body:
         List:
           - Index: 0
             Item: Battle_Manual
-            Rate: 4
+            Rate: 8
           - Index: 1
             Item: Max_Weight_Up_Scroll
-            Rate: 4
+            Rate: 8
           - Index: 2
             Item: HE_Bubble_Gum
-            Rate: 4
+            Rate: 8
           - Index: 3
             Item: Kafra_Card
-            Rate: 4
+            Rate: 8
           - Index: 4
             Item: Token_Of_Siegfried
-            Rate: 4
+            Rate: 8
           - Index: 5
             Item: Convex_Mirror
-            Rate: 4
+            Rate: 8
           - Index: 6
             Item: Insurance
-            Rate: 4
+            Rate: 8
           - Index: 7
             Item: Elite_Siege_Supply_Box
-            Rate: 2
+            Rate: 6
           - Index: 8
             Item: Enriched_Elunium
-            Rate: 2
+            Rate: 6
           - Index: 9
             Item: Enriched_Oridecon
-            Rate: 2
+            Rate: 6
           - Index: 10
-            Item: Gold_Coin
-            Rate: 2
+            Item: Rare_Coin
+            Rate: 4
           - Index: 11
-            Item: Mithril_Coin
+            Item: Ensom_Coin
             Rate: 1
