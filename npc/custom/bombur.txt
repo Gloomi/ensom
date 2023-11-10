@@ -61,7 +61,7 @@ prt_in,28,73,4	script	Bombur	826,{
 			mes "What a wuss.";
 			close;
 		}
-		if((zeny < (.zenycost+(.@cardcount * .percardcost))) | countitem(671)<1) {
+		if((zeny < (.zenycost+(.@cardcount * .percardcost))) | countitem(2000001)<1) {
 			mes "[Bombur]";
 			mes "Poor bastard. Get lost with your jellopies and don't bother me again!";
 			close;
@@ -80,7 +80,7 @@ prt_in,28,73,4	script	Bombur	826,{
 	case 2:
 		mes "[Bombur]";
 		mes "I charge a flat fee of "+callfunc("F_InsertComma",.zenycost)+" zeny, plus "+callfunc("F_InsertComma",.percardcost)+" zeny for each card I remove from the item. Hey! It's that high because it's risk free!";
-		mes "Additionally, I need a Gold Coin for every attempt.";
+		mes "Additionally, I need a Poring Coin for every attempt.";
 		close;
 	case 3:
 		mes "[Bombur]";

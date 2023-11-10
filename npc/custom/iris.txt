@@ -15,19 +15,19 @@
 
 prt_in,46,97,2	script	Iris#custom_stylist	408,{
 	mes "[Iris]";
-	mes "The fee for this service is 1 Gold Coin.";
+	mes "The fee for this service is 1 Poring Coin.";
 	next;
 	mes "[Iris]";
 	mes "Would you like to continue?";
 	next;
 	switch(select("Yes:Leave")){
 	case 1:
-		if ((countitem(671)<1)) {
+		if ((countitem(2000001)<1)) {
 		mes "[Iris]";
 		mes "Sorry but you need to pay the fee to access this service.";
 		close;
 		}
-	delitem 671,1;
+	delitem 2000001,1;
 	setarray .@Styles[1],
 		23,
 		getbattleflag("max_hair_color");

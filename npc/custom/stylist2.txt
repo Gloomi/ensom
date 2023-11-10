@@ -39,7 +39,7 @@ prt_in,38,104,4	script	Super Stylist#super_stylist	4_F_PREMI,{
 		"Cancel"
 	)) {
 		case 1:
-			if (Zeny < 100000 || BaseLevel < 80 || (countitem(674)<1)){
+			if (Zeny < 100000 || BaseLevel < 80 || (countitem(2000002)<1)){
 			next;
 			mes "^FF0000[ Super Stylist - Dress Room ]^000000";
 			mes "Sorry, you are not authorized to use this service.";
@@ -84,7 +84,7 @@ prt_in,38,104,4	script	Super Stylist#super_stylist	4_F_PREMI,{
 							set .@hairstyle,0; 
 							}
 						}
-						delitem 674,1;
+						delitem 2000002,1;
 						set Zeny, Zeny-.stylecost;
 						setlook LOOK_HAIR,.@hairstyle;
 						cutin "",255;
@@ -114,12 +114,12 @@ prt_in,38,104,4	script	Super Stylist#super_stylist	4_F_PREMI,{
 						mes "Cloth Colors: " +.@clothcolormin+ " to " +.@clothcolormax;
 						input .@clothcolor;
 						if (.@clothcolor < .@clothcolormin || .@clothcolor > .@clothcolormax) {
-						delitem 674,1;
+						delitem 2000002,1;
 						set Zeny, Zeny-.stylecost;
 						set .@clothcolor,0;
 						close;
 						}
-						delitem 674,1;
+						delitem 2000002,1;
 						set Zeny, Zeny-.stylecost;
 						setlook LOOK_CLOTHES_COLOR,.@clothcolor+1;
 						cutin "",255;
@@ -138,7 +138,7 @@ prt_in,38,104,4	script	Super Stylist#super_stylist	4_F_PREMI,{
 							if (.@bodystyle < 0 || .@bodystyle > 1) {
 								set .@bodystyle,0;
 							}
-							delitem 674,1;
+							delitem 2000002,1;
 							setlook LOOK_BODY2,.@bodystyle;
 							next;
 							break;

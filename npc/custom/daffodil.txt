@@ -1,19 +1,19 @@
 prt_in,44,113,4	script	Daffodil	729,{
 	if (BaseLevel > 60) {
 		mes "[Daffodil]";
-		mes "Hello! I can reset your stats and skills for 1 Gold Coin.";
+		mes "Hello! I can reset your stats and skills for 1 Poring Coin.";
 		next;
 		mes "[Daffodil]";
 		mes "Are you interested?";
 		next;
 		switch(select("Yes:Leave")){
 		case 1:
-			if ((countitem(671)<1)) {
+			if ((countitem(2000001)<1)) {
 			mes "[Daffodil]";
 			mes "Sorry but you need to pay the fee to access this service.";
 			close;
 			}
-			delitem 671,1;
+			delitem 2000001,1;
 			switch(select("Reset Stats:Reset Skills:Reset Both:I changed my mind")) {
 					case 1:
 						ResetStatus;
@@ -49,9 +49,9 @@ prt_in,44,113,4	script	Daffodil	729,{
 	mes "for your level bracket.";
 	next;
 	mes "[Daffodil]";
-	mes "Can I help you with anything?";
+	mes "Are you interested?";
 	next;
-	switch(select("Reset Stats:Reset Skills:Reset Both:Nothing")) {
+	switch(select("Reset Stats:Reset Skills:Reset Both:No, thank you")) {
 	
 	case 1:
 		ResetStatus;
